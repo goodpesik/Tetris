@@ -91,7 +91,7 @@ function generateMarkup () {
 }
 
 function generateFigures() {
-	jQuery.getJSON('../inc/data.json', function(data) {
+	jQuery.getJSON('/../inc/data.json', function(data) {
 		handleData(data.figures);
 	});
 	
