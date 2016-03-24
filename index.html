@@ -3,13 +3,34 @@
 <head lang="en">
 	<meta charset="UTF-8">
 	<title>Tetris</title>
-	<style>
-		
-	</style>
+	<link href='https://fonts.googleapis.com/css?family=Marck+Script|Seymour+One&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<div id="wrapper">
-		<div class="field"></div>
+	<div class="wrapper game-stop">
+		<span class="pause-text">PAUSE</span>
+		<div class="field">
+			<div class="sidebar">
+				<h3>NEXT</h3>
+				<div class="next-figure">
+					<div class="figure">
+						<div class="box"></div>
+					</div>
+				</div>
+				<div class="row">
+					<a href="#" class="button start">Start game</a>
+				</div>
+				<div class="row">
+					<a href="#" class="button restart">Restart game</a>
+				</div>
+				<div class="row">
+					<a href="#" class="button stop">Stop game</a>
+				</div>
+				<span class="level">LEVEL <em></em></span>
+				<span class="score">0</span>
+				<span class="pause">Press SPACE for pause</span>
+			</div>
+		</div>
 	</div>
 	<script src="js/jquery-1.8.3.min.js"></script>
 	<script src="js/index.js"></script>

@@ -1,0 +1,218 @@
+body {
+	background: #091009;
+}
+.wrapper {
+	width: 1200px;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	position: relative;
+}
+.pause-text {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	font-family: 'Marck Script', cursive;
+	font-size: 60px;
+	color: #09df09;
+	text-shadow: 4px 4px 10px #fff;
+	text-align: center;
+	opacity:0;
+	z-index:-1;
+	transition: .5s all ease-in;
+}
+.game-pause .pause-text {
+	opacity: 1;
+	z-index: 1;
+}
+
+.field {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	border:1px solid #fff;
+}
+.field:after{
+	display: block;
+	clear: both;
+	content: '';
+}
+.wrapper li {
+	float: left;
+	box-sizing: border-box;
+	width: 30px;
+	height: 30px;
+	border: 1px solid rgba(209, 209, 209, .3);
+}
+.wrapper li.state.green,
+.wrapper li.state {
+	background: green;
+}
+.wrapper li.state.orange {
+	background: orange;
+}
+.wrapper li.state.yellow {
+	background: yellow;
+}
+.wrapper li.state.red {
+	background: red;
+}
+.wrapper li.state.blue {
+	background: blue;
+}
+.wrapper li.state.white {
+	background: white;
+}
+.wrapper li.state.purple {
+	background: purple;
+}
+.sidebar {
+	width: 300px;
+	position: absolute;
+	left: 110%;
+	top: 0;
+	background: rgba(255, 255, 255, .7);
+	text-align: center;
+	box-sizing: border-box;
+	padding: 10px 50px;
+}
+.row {
+	margin-bottom: 10px;
+}
+.button {
+	font-family: 'Marck Script', cursive;
+	padding: 10px;
+	font-size: 16px;
+	background: #000;
+	color: #09df09;
+	text-decoration: none;
+	border-radius: 10px;
+	text-transform: uppercase;
+	display: inline-block;
+	box-shadow: 4px 4px 10px #fff;
+}
+
+.level {
+	font-family: 'Seymour One', sans-serif;
+	font-size: 20px;
+	color: #000;
+	text-shadow: 2px 2px 1px #fff;
+	display: block;
+	margin: 20px 0;
+}
+
+.score {
+	font-family: 'Marck Script', cursive;
+	font-size: 30px;
+	color: #000;
+	text-shadow: 2px 2px 1px #fff;
+	margin: 0 0 10px;
+	display: block;
+}
+
+.pause {
+	font-family: 'Seymour One', sans-serif;
+	font-size: 16px;
+	color: #000;
+	text-shadow: 2px 2px 1px #fff;
+}
+
+h3 {
+	font-family: 'Marck Script', cursive;
+	font-size: 30px;
+	color: #000;
+	margin: 0 0 20px;
+	text-shadow: 2px 2px 1px #fff;
+}
+.game-stop .next-figure > div .box:after,
+.game-stop .next-figure > div .box:before{
+	display: none;
+}
+
+.next-figure {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto 20px;
+	position: relative;
+	background: #000;
+}
+.next-figure > div .box {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.next-figure > div .box:after,
+.next-figure > div .box:before {
+	content:'';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 25%;
+	height: 25%;
+	background: green;
+}
+div.l .box:after {
+	height: 75%;
+	left: 25%;
+}
+div.l .box:before {
+	left: 50%;
+	top: 50%;
+}
+div.l2 .box:after {
+	height: 75%;
+	left: 50%;
+}
+div.l2 .box:before {
+	left: 25%;
+	top: 50%
+}
+div.square .box:after {
+	width: 50%;
+	left: 25%;
+}
+div.square .box:before {
+	width: 50%;
+	top: 25%;
+	left: 25%;
+}
+div.z .box:after {
+	width: 50%;
+	left: 25%;
+}
+div.z .box:before {
+	width: 50%;
+	top: 25%;
+	left: 50%;
+}
+div.z2 .box:after {
+	width: 50%;
+	left: 50%;
+}
+div.z2 .box:before {
+	width: 50%;
+	top: 25%;
+	left: 25%;
+}
+div.i .box:after {
+	height:100%;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+div.i .box:before {
+	display: none;
+}
+div.t .box:after {
+	width: 75%;
+	left: 25%;
+}
+div.t .box:before {
+	top: 25%;
+	left: 50%;
+}
