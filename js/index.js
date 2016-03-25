@@ -34,6 +34,8 @@ var VARGLOB = {
 	colorFlag: false
 }
 
+//start game
+
 jQuery(function() {
 	init();
 });
